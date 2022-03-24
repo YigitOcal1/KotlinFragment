@@ -28,7 +28,8 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
     val button=view.findViewById<Button>(R.id.first_fragment_button)
         button.setOnClickListener {
-    val action=FirstFragmentDirections.actionFirstFragmentToSecondFragment()
+    val action=FirstFragmentDirections.actionFirstFragmentToSecondFragment(22)
+
             Navigation.findNavController(it).navigate(action)
         }
     }
